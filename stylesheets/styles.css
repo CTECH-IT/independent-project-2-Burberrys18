@@ -1,1 +1,50 @@
-/* Put your CSS here */
+@font-face {
+    font-family: 'airstreamregular';
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/Airstream-webfont.eot");
+    src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Airstream-webfont.woff') format('woff'),
+         url('fonts/Airstream-webfont.ttf') format('truetype'),
+         url('fonts/Airstream-webfont.svg#lakeshore') format('svg');   
+}
+
+@font-face {
+    font-family: 'lakeshore';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/LAKESHOR-webfont.eot');
+    src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/LAKESHOR-webfont.woff') format('woff'), 
+         url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
+         url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');     
+}
+
+.container, .main-content {
+    display: flex;
+    flex-direction: column;
+    background: #00FFEF;
+}
+
+.ads {
+    background: #00B2EE;
+}
+
+.images {
+    order: -1;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row;
+        flex: 1;
+    }
+
+    .main-pic-container {
+        flex: 1;
+    }
+
+    .images, .ads {
+        flex: 0 0 12em;
+    }
+}
