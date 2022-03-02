@@ -100,11 +100,11 @@ a[href="#"] {
 }
 
 .main-pic-frame {
-    
+
 }
 
 
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
     .main-content {
         flex-direction: row;
         flex: 1;
