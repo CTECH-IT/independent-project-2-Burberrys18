@@ -20,6 +20,10 @@
          url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');     
 }
 
+html, .container {
+    height: 100%;
+}
+
 .container, .main-content {
     display: flex;
     flex-direction: column;
@@ -34,12 +38,21 @@
     order: -1;
 }
 
-.page-title {
+.page-title, .page-footer {
     background-image: linear-gradient(to bottom, grey, white);
     font-size: 40px;
     font-family: airstreamregular;
     text-align: center;
     text-transform: uppercase;
+}
+h2 {
+    color: rgba(255, 0, 0, 0.699);
+    font-size: 30px;
+    font-family: lakeshore;
+    text-align: center;
+}
+p {
+    text-shadow: #062e3b0c;
 }
 
 .main-header, .main-footer {
@@ -100,21 +113,54 @@ a[href="#"] {
 }
 
 .main-pic-frame {
+    text-align: center;
+    position: relative;
 
+    transition: transform 333ms cubic-bezier(1, 0.06, 0.28, 1);
 }
 
 
 @media all and (min-width: 768px) {
     .main-content {
         flex-direction: row;
-        flex: 1;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .main-footer, .main-header {
+        width: 100%;
+    }
+    .main-footer {
+        order: 4;
     }
 
     .main-pic-container {
+        flex: 2;
+        order: 2;
+        min-height: 80%;
+    }
+
+    .images {
+        order: 1;
         flex: 1;
     }
 
+    .thumbnail-list {
+        flex-direction: column;
+        margin-left: 20px;
+        order: 0;
+        padding: 0 35px;
+    }
+    .thumbnail-item {
+        max-width: 260px;
+    }
+   
+    .ads {
+        flex: 1;
+        order: 3;
+    }
     .images, .ads {
         flex: 0 0 12em;
     }
+
 }
