@@ -20,9 +20,7 @@
          url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');     
 }
 
-html, .container {
-    height: 100%;
-}
+
 
 .container, .main-content {
     display: flex;
@@ -52,7 +50,7 @@ h2 {
     text-align: center;
 }
 p {
-    text-shadow: #062e3b0c;
+    text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;;
 }
 
 .main-header, .main-footer {
@@ -91,7 +89,7 @@ a[href="#"] {
     transition: transform 0ms;
 }
 
-.thumbnail-list {
+.images, .thumbnail-list {
     list-style: none;
     display: flex;
     padding: 20px 0;
@@ -119,6 +117,19 @@ a[href="#"] {
     transition: transform 333ms cubic-bezier(1, 0.06, 0.28, 1);
 }
 
+.hidden-detail .detail-image-container {
+    display: none;
+}
+
+.hidden-detail .thumbnail-list {
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden-detail .thumbnail-item {
+    max-width: 80%
+}
+
 
 @media all and (min-width: 768px) {
     .main-content {
@@ -139,7 +150,7 @@ a[href="#"] {
         order: 2;
         min-height: 80%;
     }
-
+    
     .images {
         order: 1;
         flex: 1;
@@ -148,7 +159,6 @@ a[href="#"] {
     .thumbnail-list {
         flex-direction: column;
         margin-left: 20px;
-        order: 0;
         padding: 0 35px;
     }
     .thumbnail-item {
@@ -159,8 +169,5 @@ a[href="#"] {
         flex: 1;
         order: 3;
     }
-    .images, .ads {
-        flex: 0 0 12em;
-    }
-
+    
 }
