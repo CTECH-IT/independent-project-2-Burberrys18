@@ -44,6 +44,12 @@
     font-family: airstreamregular;
     text-align: center;
     text-transform: uppercase;
+
+    transition: 1000ms ease-in;
+}
+.page-title:hover {
+    background-image: linear-gradient(to right, red, green);
+    transform: rotate(-360deg);
 }
 h2 {
     color: rgba(255, 0, 0, 0.699);
