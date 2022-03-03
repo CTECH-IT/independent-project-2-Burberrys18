@@ -25,7 +25,9 @@
 .container, .main-content {
     display: flex;
     flex-direction: column;
-    background: #00FFEF;
+}
+.container {
+    background: url('/img/ccc.jpg');
 }
 
 .ads {
@@ -37,7 +39,7 @@
 }
 
 .page-title, .page-footer {
-    background-image: linear-gradient(to bottom, grey, white);
+    background-image: linear-gradient(to bottom, grey, #00FFEF);
     font-size: 40px;
     font-family: airstreamregular;
     text-align: center;
@@ -102,6 +104,7 @@ a[href="#"] {
 
 .detail-image {
     width: 100%;
+    height: 80%;
 }
 
 .main-pic-container {
