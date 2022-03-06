@@ -161,10 +161,10 @@ a[href="#"] {
         flex-direction: column;
         margin-left: 20px;
         padding: 0 35px;
-        overflow-y: hidden;
+        overflow-y: auto;
     }
     .thumbnail-item {
-        max-width: 260px;
+        max-width: 150px;
     }
    
     .ads {
