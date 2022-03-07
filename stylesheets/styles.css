@@ -124,6 +124,8 @@ a[href="#"] {
 .main-pic-frame {
     text-align: center;
     position: relative;
+    width: 80%;
+    height: 100%;
 
     transition: transform 333ms cubic-bezier(1, 0.06, 0.28, 1);
 }
