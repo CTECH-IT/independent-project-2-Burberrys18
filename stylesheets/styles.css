@@ -155,12 +155,18 @@ a[href="#"] {
     .images {
         order: 1;
         flex: 1;
+        height: 555px;
+        overflow: scroll;
+    }
+    .main-pic {
+        object-fit: contain;
     }
 
     .thumbnail-list {
         flex-direction: column;
         margin-left: 20px;
         padding: 0 35px;
+        justify-content: center;
         overflow-y: auto;
     }
     .thumbnail-item {
