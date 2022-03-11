@@ -27,7 +27,7 @@
     flex-direction: column;
 }
 .container {
-    background: url('/img/ccc.jpg');
+    background: url('../img/ccc.jpg');
 }
 
 .ads {
